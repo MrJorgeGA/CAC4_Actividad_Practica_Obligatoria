@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Actividad Práctica Obligatoria</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actividad Práctica Obligatoria</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Codo a Codo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desactivado</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="card-group">
+            <div class="card">
+                <div class="ratio ratio-16x9">      
+                    <img src="https://blog.ida.cl/wp-content/uploads/sites/5/2012/05/encabezado1.jpg" class="card-img-top" alt="...">
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">titulo 1</h5>
+                <p class="card-text">Contenido de Card</p>
+                <p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
+              </div>
+            </div>
+            <div class="card">
+                <div class="ratio ratio-16x9">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASMAAACtCAMAAADMM+kDAAAA8FBMVEUmaYVPnaRPi6QAbrr///8DlNIAAABPkaQnaYMAbLkAa7tRnqM3jKoEl9Qba5gAkdECfMIBdr9ttNsoUFRuocw/hb5frNgjZoMtcYpAg8AyeI1PjaQ0XG00aG0UNkQvdItPmaQZRlgFDxNKk5o/otNPlKQNGRpMjMEAZbcAjtEgWXFKoKxSoKMjREciaYoYaZ5DhYw+h5csgq8/kagKbLIQaqglfrEfaZEAYbU2fZBCdIk8dHxKgpkdT2Qxbn1RmqgUOEcqfKEYd7Tc6O+40+Shv9mUtdbo8PV5p89Zlsaz1Ocrer2kzOaPwuHK2+iLwOH/6o/lAAAKKUlEQVR4nO2de1/TSBSGO9vFksRSyiKIiLICkgAL6pYFFrWr3BQQvv+32dw798zkcmZS+v5nDGie3zuXN+ck6fR+a4U65vSq0wpGvY+rM0ZSrW96b80hagWjHvI2DdqoBYxCEyHvbMZIotBECCGDhKxnFJkIIc/kjG07o8REyHtpEpHVjBIThdoyaiObGfVSQsh7ZRSRvYxyExle+C1m1EO5zC781jKamChiZJaQpYx2EC6zC7+djAgTGV/4Q721jhFpIvMztn2MKBNZMGNbx2iHIhTKOCK7GDEmMh7VrGPEMZEFM7ZNjNYRB5HpqGYXI56JzEe1WKYY/fua1DlCG5S20NbGxp+Enhaj189I/YXQO+rQB/SBOvLsyTN6X8jo3YzRjJE2o/PZWAv1+bfPO1uR4jXsfYIqX/VRwujL6kS2MVovde2qP5UwWk9X+H2PZRQe/hozMgNGiVGzihmReyJ2PtqbzUfPtpCU0ccZo0JGL2eMaEb0HvJr52kzGm+wjLYmOo/+dq/TwZa0N0+MUQ95MSNeio31gV3QnhijcbicbVDDiLOH/PJ0x1rS5zBjJNE42RPNGAnVy242chjR69oTZTTON9bnf5DaQIg88ObNXmfvDan/pp9Rj3vHmquDMzM4uAJkNFYmhAw3QFICY6RhIjuqahNBMdIykRVVtYmkjMrdQuJIwUT7+B9sqKpNBOIjtkRdYCMbqmoTATAKTaQp1JlX1xQwivscnuvp24K6TpqH1DSjeCbadDXlKMs9ajujrFmm25ichcYRNcsoW84O7pzGGJ20mhHWhf69MUbdw+bH2svGGOFd6P/MGHFEtO0dNMiocUKNMeoRu8aD527daHLoAPsjFUbakSQ2ERYuPD1GiwoappBGljDSFdWFrsto2FfQYnrycSsZ8RqI/9Zg5Az7c4XqZz5qJSPGRBGjscacrcXIAdhm182IY6JIm+qIFBllZ7ePEc9EumFEidFcdvJCyxgJTBQNtlHdjNLBCxFF6mTE70KPdaARRpQYDXJGJn2kuylKHmXY5zPSCWwqjPoZI4goslqXjyQmQnphRMlHQc6ocUR1MeI/D4Mx+kQxkt1gG84NxKIZNY+oJkZyE0WMvlGbyGWZliTaTsbaYhZFWsKoyESIDSPu72W1NEgYpb8IIq7VwKjQRIgNI/5FWUbbCaNh+osgokhlRgomihiNKUYPZRkl8zloXKvKSMVEkTYpRpcVGWW/CCKKVGOkZqJY5JTtX5VlNCAYgUTaSox0+hzIMOJfl0R0E5BRBKByVIWRXrMMWT1yf5RkdBEQUcQF2GZXYKTXLEMFNvdnSUYPARFFHJsZaZkIMdUjZ60ko9uA2GbbzEjPRIgJbM5dSUb3AXgUKXdvRNdEiAlsTrcko1/JurYIWBUpxUjbRIhTGVnj6G6taEtwm94SgIwiJRhpmyi+pcRURtguGb9wQ3DfT1d+0MqRPqMyJuIxouT4bhGh24wQcBTRZVRiJkoZjWWMVDw0yAlhUcQ0I87NWgUTCW7W0oFN00MEIeC4puWj0iaKJSbkKM9DufIoYhkj3QZiUt6Qe0fb8UdFaxlLCLZypM6omolE1SN/WEhojiUEWzlSZSSuLlZg5CgQ4ngI22aDRFpFRlVNhHjVo5IeIuIaBCElRtVNhHjVo0JCQSCqHGVRBKKJTYlRDSZCTBhxnBs5oYcVntI7tbBxrZgRZSLR/keufbZ6VMCILwOVo2JG9ZgI1VU9yipHoFFEzqiWmShlVEv1iKqKWMCoV3zp6qqlemQkisjyWn0mikWua6WqRzcpI8cSRrWaCDGtbIUxlstoQESRLkTlSMyobhMxzx6Vqh5dUNU1mLgmYFS3iVA91SOqcuQDPb3NY5SbqOxmiMuohuoRVTlyAZrYBIxU+xz0dPCJ3GiPSjC6HxCMYCpHHEb1z0QZI9JHTglGj2TlCCiuMYyaMRFiq0fObqQXHO1u47rEGJmJIhSjpkyElKpHqYZ9LOkH+H58Bb6JjWEkfJShCUYikb3HBKO0YRQ4ruGMGjQRKqoeiRnh2ZeKIlCM5nNGjc1EmWRjTchogN9DGRiJIrmPmjVRJI9CtPZzNxe+B6f6/DFGWRNbChuocpT7qHETyQPbtStkhJ11QTKCimuJjzR6P8uLDiPL2NVf+SJGfewsKop0YSpHiY+aMREdSahnj5xdbUaXBprYEkY7ECZCbGD7jl+9iNFgGzuLiiIuDKGIEQggxAS2ro+PIiGjFeysrIktOxHIRpCMqGePTvHZ+FTEaAk769FMFAFkRAe2U3xVFzL6hTFaIasi08hIUj26wXaRYkbb089oR1I9uvP9DBPGaBAEt9hJZipHkaAYyatHF1e7vu86E0Yhn/4jWYQLzEQRsY/qvE+byKMYMdWjhx93pyGn6N5IMFi5ZardphgB+ogKbNzq0c3VsuMG2794le40rg2g4xokowOy3c9Z5nCIh53oOPnMEVTlCHLOpgMbEUZU9GAoinQgx1rF6hHzzBEYIkAfUZUR3eoR9TwNWBSBZSQOIyqioghU5Qh0PmJa2ZYvNQhd3GeNfumPg22zTTLqur7/4lqlV+vmdqkfpD0j8FGkozHW9ituK3nVI8f1nZ9X0t7Ih8ftIANkKIoA+oj/5roQ0+ndD/6wu7hfwfngjEAe7QdnxFSPSE4vrsnN483l0lwwIAEZiiKQjESIEk6+312+vOEOMFx5E9tUMip8c11oJ/fu+uF+ZU7AB48iUJUjWEZKb65zXIcdYNhQy7fZUJUjWEaKb66Tv49t8ia26WSk9OY6+Tvr8mdFgJ450mVU9bYbHUZKMOobiCJajKqKeXOdHqN+fxAM85eLQ26zIcea0mu0uYz6/blgsYv34EwrI6VWNpZRaKDFoUPNZZBRpF5G0imLrh6pMIoHGNXF1XJGUnmSFyHwGEV8yAGGnQUZRSCzCPo26hYu/wkjdgLCT+mOjiG3R5CMvFfzqyfHBZyc6JsH8QQkAnS8cAjyTTETjLzN1U70ZbXDhZEIQMwoNpAA0OjopAMMCJbRWfIJw+jLcidHIzEl0XF4A4Ezwj+oGl7r6sKxZMhxDATz1T6zjJgPqsZ2cgsXOzecgQwMMExgiHgfVI2uPJzFZZP48dGhSTyxwBBtij6oGs7i4ezE4eSamaFZQTFCZ+KPzqazuIu3+ydLPCAIicAYFXyXN94UHMeLmmNoiRcKiJDKJ7AjKuGwO15YtYhPpOQS9hUb2felf5T8lOonsM0t8BKpW6GS7PoEtqaAGNn1CWxNgRASL/ytEAwjycLfAoEwQvbNwzoCQaSw8NssCETeW9NXWU0QjNo9Y4MwavmMPWFUrlKtJtPXWFUNokmlEtXsFgCjdi/8HQhGrY5qsRpH5LU6qsVqHFHRzbUWqHFGrZ+xARiZvsAa1DSjKbBR04xU99jzHOUHG0ZQ9F9r/LlsBUQl3xdaLihr/2PzTT+bNQUz9vz8/49q3k6XCwTkAAAAAElFTkSuQmCC" class="card-img-top" alt="...">
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">titulo 2</h5>
+                <p class="card-text">Contenido de Card</p>
+                <p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
+              </div>
+            </div>
+            <div class="card">
+                <div class="ratio ratio-16x9">
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">titulo 3</h5>
+                <p class="card-text">Contenido de Card</p>
+                <p class="card-text"><small class="text-muted">Ultima actualizacion 1</small></p>
+              </div>
+            </div>
+        </div>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca comparta su email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Verificar</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </body>
 </html>
